@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Your Contact!</title>
+</head>
+<body>
+    <p>Enter your name to get your phone number!</p>
+    <input type="text" class="input" onchange="clearP()" onkeypress="clearP()">
+    <button class="button" onclick="search()">Search!</button>
+    <h4 class="h4"></h4>
+</body>
+
+<style>
+    p {
+        display: block;
+        text-align: center;
+        margin-top: 310px;
+        font-size: 30px;
+    }
+    input {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 30px;
+        margin-top: 50px;
+    }
+    button {
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        width: 250px;
+        height: 30px;
+        color: white;
+        background-color: green;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+    }
+    button:active {
+        opacity: .5;
+    }
+    h4 {
+        display: block;
+        text-align: center;
+        margin-top: 80px;
+        font-size: 40px;
+    }
+</style>
+
+
+<script src="script.js"></script>
+
+
+</html>
