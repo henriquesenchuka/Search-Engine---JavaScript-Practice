@@ -14,18 +14,15 @@ function search() {
     
     let nameTyped = document.querySelector(".input").value
 
-        let i
-        for(i = 0; i < contacts.length; i++) {
-            if(nameTyped == contacts[i].name){
-                    document.querySelector(".h4").innerHTML = contacts[i].number
-                break;
-            }
+    for(const contact of contacts){
+        if (contact.name === nameTyped){
+            document.querySelector(".h4").innerHTML = contact.number
+            break;
         }
-        
-        if(i == contacts.length){
-            document.querySelector(".h4").innerHTML = "Nome Inválido!!"
+        else {
+            document.querySelector(".h4").innerHTML = "Invalid Name!!"
         }
-
+    }
 }
 
 function clearP() {
